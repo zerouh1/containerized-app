@@ -17,9 +17,9 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: taskapp-frontend:latest
+          image: taskapp-frontend:v4
           # For local minikube use: imagePullPolicy: Never
-          imagePullPolicy: Never
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
           resources:
